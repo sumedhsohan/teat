@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="love.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+    <div id="welcome-screen">
+      <h1>Hey Beautiful! 💖</h1>
+      <button onclick="startProposal()">Start</button>
+    </div>
+
+    <div id="proposal-screen" class="hidden">
+      <h2>Will you go on a date with me? 💐</h2>
+      <div class="buttons">
+        <button id="yes-btn" onclick="showLoveLetter()">Yes 💘</button>
+        <button id="no-btn" onmouseover="moveButton(this)">No 🙈</button>
+      </div>
+    </div>
+
+    <div id="letter-screen" class="hidden">
+      <div class="card">
+        <h2>💌 My Love Letter</h2>
+        <p>
+          Dear love,<br><br>
+          From the moment we met, you've filled my life with light, laughter, and love. 
+          You're the most amazing person I've ever known, and being with you feels like magic. ✨<br><br>
+          I’d love to spend more beautiful moments together. So, will you be my date? ❤️
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
